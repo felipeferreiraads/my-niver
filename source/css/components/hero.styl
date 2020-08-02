@@ -1,0 +1,40 @@
+.hero
+    width: 100%
+    height: 100vh
+    background: linear-gradient(119.05deg, #45C1C8 0%, #3AABB1 100%)
+    position relative
+    .container
+        height: 100%
+    .content
+        height: calc(100% - 92px)
+        display: flex
+        flex-direction: column        
+        justify-content: center
+        h1
+            color: #fff
+            font-size: 42px
+            font-weight: 500
+            max-width 480px
+            line-height: 1.4
+        p
+            color: #fff
+            line-height: 1.4
+            max-width 480px
+            margin-top: 30px
+        a
+            align-self: flex-start
+            margin-top: 70px
+            
+    > img
+        position: absolute
+        top: 55%
+        right: 0
+        transform: translateY(-50%)
+        width: 52%
+        +below($bp.lg)
+            display: none 
+    .anchor
+        position absolute
+        bottom: 20px
+        left 50%
+        transform: translateX(-50%)

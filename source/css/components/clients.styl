@@ -1,0 +1,38 @@
+.clients
+    padding 70px 20px
+    background-color: #1e1e1e
+    .container
+        display: flex
+        justify-content: center
+        +below($bp.lg)
+            flex-direction: column
+    .counter
+        display: flex
+        flex-direction: column
+        text-align: center
+        color #fff
+        +above($bp.lg)
+            margin-right: 15%
+        +below($bp.lg)
+            margin-bottom 50px
+        h3
+            font-size: 80px
+            margin-bottom: 20px
+            font-weight: 400
+        p
+            font-size: 30px
+            line-height: 1.5
+    .title
+        margin-bottom: 40px
+        +above($bp.lg)
+            max-width 500px
+        +below($bp.lg)
+            text-align: center
+            &::after
+                left 50%
+                transform: translateX(-50%)
+    a
+        +below($bp.lg)
+            max-width 212px
+            display: block
+            margin: 0 auto

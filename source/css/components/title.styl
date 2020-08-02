@@ -1,0 +1,29 @@
+.title
+    font-size: 42px
+    font-weight: 500
+    line-height: 1.4
+    padding-bottom: 20px
+    position relative
+    align-self flex-start
+    +below($bp.sm)
+        font-size: 25px
+    &::after
+        content: ''
+        width: 48px
+        height: 4px
+        background-color: $color.secondary
+        position absolute
+        bottom: 0
+        left 0
+    &:not(.left)
+        text-align: center
+        &:after
+            left 50%
+            transform: translateX(-50%)
+    &.white
+        color: #fff
+        &::after
+            background-color: #000
+    &.border-green
+        &::after
+            background-color: $color.secondary

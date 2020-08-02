@@ -1,0 +1,45 @@
+.contact
+    padding: 80px 0
+    background-color: $color.primary
+    +below($bp.lg)
+        padding: 50px 0
+    .container
+        display: flex
+        justify-content: space-between
+        +below($bp.lg)
+            flex-direction: column
+    .info
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    .social
+        display: flex
+        color #fff
+        font-size: 25px
+        > *:not(:last-child)
+            margin-right: 25px
+        +below($bp.lg)
+            margin: 40px 0
+    .form
+        max-width 100%
+        +above($bp.lg)
+            width: 480px
+        form
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            > *:not(:last-child)
+                margin-bottom: 20px
+        input, textarea
+            background-color: #EE706E
+            color #fff;
+            border: none
+            border-radius: 6px
+            height: 40px
+            padding: 0 15px
+        textarea
+            height: 160px
+            resize: none
+            padding: 15px
+        button
+            align-self: flex-end

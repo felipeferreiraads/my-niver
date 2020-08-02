@@ -1,0 +1,21 @@
+.about
+    padding: 50px 0
+    background: linear-gradient(135.81deg, #45C1C8 0%, #3AABB1 100%)
+    +above($bp.lg)
+        padding: 108px 0
+    .container
+        +above($bp.lg)
+            display: flex
+    .title
+        +above($bp.lg)
+            flex-basis: 200px
+        +below($bp.lg)
+            margin-bottom 50px
+    .text
+        flex: 1
+        color #fff;
+        line-height: 1.4
+        p:not(:first-child)
+            margin-top: 20px
+        +above($bp.lg)
+            padding-left: 10%

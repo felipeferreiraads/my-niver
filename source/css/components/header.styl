@@ -1,0 +1,52 @@
+header
+    height: 92px
+    padding: 20px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    nav
+        display: flex
+        a
+            color: #fff
+            transition: .3s
+            &:not(:last-child)
+                margin-right: 60px
+            &:hover
+                color: $color.primary
+        +below($bp.sm)
+            position: fixed
+            width: 100%
+            height: 100vh
+            top: 0
+            right: 0
+            background-color: $color.primary
+            display flex
+            flex-direction: column
+            justify-content: center
+            padding: 35px
+            font-size: 20px
+            opacity: 0
+            visibility: hidden
+            transition all ease-in-out .3s
+            z-index: 9
+            > *:not(:last-child)
+                margin-bottom 30px
+    .mobile
+        display: none 
+        background-color: transparent
+        padding: 0
+        color: #fff
+        border: none 
+        font-size: 20px
+        +below($bp.sm)
+            display: block
+    .mobile-close
+        display: none
+        +below($bp.sm)
+            display: block
+            position: absolute
+            top: 35px
+            right: 20px
+            background: transparent
+            border: none 
+            padding: 0

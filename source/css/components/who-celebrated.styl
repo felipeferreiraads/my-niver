@@ -1,0 +1,70 @@
+.who-celebrated
+    padding: 120px 0
+    position relative
+    h2
+        margin-bottom: 50px
+    .container
+        max-width: 1290px
+    > div > p
+        text-align: center
+        color: #4e4e4e
+        margin-bottom: 80px
+    .decorator
+        position: absolute
+        top: -30%
+        right:  0
+        z-index: -1
+
+.carousel-testmonies
+    position relative
+    padding: 0 45px
+    max-width 1290px
+    margin: 0 auto
+
+.card-testimony
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.1)
+    border-radius: 20px
+    display: flex
+    +below($bp.lg)
+        flex-direction: column
+    figure
+        flex-basis: 120px
+        +above($bp.lg)
+            padding-right: 20px
+        +below($bp.lg)
+            margin-bottom: 20px
+        img 
+            width: 100px !important
+            height: 100px
+            border-radius: 100%
+            object-fit: cover
+            object-position: center
+            +below($bp.lg)
+                margin: 0 auto
+    .info
+        flex: 1
+        h3
+            font-weight: 500
+            margin-bottom: 15px
+            line-height: 1
+        p
+            color #4e4e4e
+            line-height: 1.6
+
+.owl-dots
+    display: flex
+    justify-content: center
+    margin-top: 40px
+    > *:not(:last-child)
+        margin-right: 5px
+
+.owl-dot
+    width: 7px
+    height 7px
+    background-color: rgba(0,0,0,0.2) !important
+    border-radius: 100%
+    &.active
+        width: 20px
+        border-radius: 7px
+        background-color: $color.primary !important

@@ -1,0 +1,58 @@
+.benefits
+    padding: 120px 0 60px
+    position relative
+    +below(1100px)
+        padding: 50px 0
+    .container
+        display: flex
+        justify-content: space-between
+        +below(1100px)
+            flex-direction: column
+    h2
+        align-self flex-start
+        +above(1100px)
+            width: 350px
+        +below(1100px)
+            margin-bottom: 50px
+      
+    .grid
+        display: flex
+        flex-wrap: wrap
+        +above(1100px)
+            justify-content: flex-end
+            padding-left: 10%
+            > *
+                width: 320px
+                &:nth-child(odd)
+                    margin-right: 10%
+                &:nth-child(n+3)
+                    margin-top: 60px
+        +below(1100px)
+            > *
+                &:nth-child(n+2)
+                    margin-top: 40px
+    .decorator
+        position: absolute
+        bottom: -30%
+        left 0
+        z-index: -1
+        +below($bp.lg)
+            display: none
+
+.card-benefit
+    figure
+        width: 60px;
+        height 60px
+        background-color: #f6f6f6
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom 25px
+    h3
+        font-size: 20px
+        font-weight: 500
+        margin-bottom: 25px
+    p
+        color: #4E4E4E
+        line-height: 1.6
