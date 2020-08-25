@@ -16,11 +16,11 @@ $('.carousel-partners .carousel').owlCarousel({
     }
 })
 
-$('.carousel-partners .prev').click(function () {
+$('.carousel-partners .carousel-prev').click(function () {
     $('.carousel-partners .carousel').trigger('prev.owl.carousel', [300])
 })
 
-$('.carousel-partners .next').click(function () {
+$('.carousel-partners .carousel-next').click(function () {
     $('.carousel-partners .carousel').trigger('next.owl.carousel')
 })
 
@@ -38,10 +38,10 @@ $('.carousel-testmonies .carousel').owlCarousel({
     }
 })
 
-$('.carousel-testmonies .prev').click(function () {
+$('.carousel-testmonies .carousel-prev').click(function () {
     $('.carousel-testmonies .carousel').trigger('prev.owl.carousel', [300])
 })
 
-$('.carousel-testmonies .next').click(function () {
+$('.carousel-testmonies .carousel-next').click(function () {
     $('.carousel-testmonies .carousel').trigger('next.owl.carousel')
 })

@@ -1,5 +1,6 @@
 <?php get_header(); 
 
+$pageID = get_option( 'page_for_posts' );
 $posts = new WP_Query([
     'post_type' => 'post', 
     'posts_per_page' => 6, 
@@ -15,8 +16,8 @@ $posts = new WP_Query([
         <div class="container">
             <?php get_template_part('inc/menu-blog'); ?>
             <div class="blog-title">
-                <h1 class="title">Blog</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis aliquam pulvinar pellentesque vitae turpis at. Mi, viverra morbi et elementum elementum, risus, aliquam. Viverra pellentesque condimentum pellentesque et et.</p>
+                <h1 class="title"><?php echo get_the_title($pageID); ?></h1>
+                <p><?php the_field('subtitle', $pageID); ?></p>
             </div>
         </div>
     </section>

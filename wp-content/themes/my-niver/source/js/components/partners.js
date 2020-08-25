@@ -1,6 +1,6 @@
 function getPartners () {
     $.ajax({
-        url: 'https://myniver.net/estabsniver',
+        url: 'https://app.myniver.net/estabsniver',
         crossDomain: true,
         dataType: 'json',
         headers: {

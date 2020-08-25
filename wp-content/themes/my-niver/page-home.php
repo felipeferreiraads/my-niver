@@ -6,7 +6,7 @@
             <div class="content">
                 <h1><?php the_field('banner_title'); ?></h1>
                 <p><?php the_field('banner_subtitle'); ?></p>
-                <a href="<?php echo site_url('/cadastre/'); ?>" class="button">Cadastre-se</a>
+                <a href="<?php echo site_url('/cadastro/'); ?>" class="button">Cadastre-se</a>
             </div>
         </div>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero.svg" alt="Hero">
@@ -80,7 +80,7 @@
             </div>
             <div class="cta">
                 <h2 class="title white left border-green">Comemore conosco você também</h2>
-                <a href="<?php echo site_url('/cadastre/'); ?>" class="button">Cadastre-se</a>
+                <a href="<?php echo site_url('/cadastro/'); ?>" class="button">Cadastre-se</a>
             </div>
         </div>
     </section>

@@ -3,16 +3,13 @@
             <div class="info">
                 <h2 class="title white left border-green">Entre em contato</h2>
                 <div class="social">
-                    <a href="#" target="_blank">
+                    <a href="https://facebook.com/myniverbr/" target="_blank">
                         <i class="fa fa-facebook"></i>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/company/myniver/" target="_blank">
                         <i class="fa fa-linkedin"></i>
                     </a>
-                    <a href="#" target="_blank">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#" target="_blank">
+                    <a href="https://instagram.com/myniverbr/" target="_blank">
                         <i class="fa fa-instagram"></i>
                     </a>
                 </div>
