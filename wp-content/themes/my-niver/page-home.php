@@ -6,7 +6,7 @@
             <div class="content">
                 <h1><?php the_field('banner_title'); ?></h1>
                 <p><?php the_field('banner_subtitle'); ?></p>
-                <a href="https://app.myniver.com.br/cadastro" class="button">Cadastre-se</a>
+                <a href="https://app.myniver.net/cadastro" class="button">Cadastre-se</a>
             </div>
         </div>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero.svg" alt="Hero">
@@ -40,7 +40,16 @@
                 <p><?php the_field('partners_subtitle'); ?></p>
             </div>
             <div class="carousel-partners">
-                <div class="carousel owl-carousel" id="carousel-partners"></div>
+                <div class="carousel owl-carousel" id="carousel-partners">
+                <?php while(have_rows(('partners'))): the_row(); ?>
+                    <div class="card-partner">
+                        <figure>
+                            <img src="<?php the_sub_field('logo'); ?>" alt="<?php the_sub_field('name'); ?>">
+                        </figure>
+                        <h3><?php the_sub_field('name'); ?></h3>
+                    </div>
+                <?php endwhile; ?>
+                </div>
                 <button class="carousel-prev">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt="Arrow">
                 </button>
@@ -80,7 +89,7 @@
             </div>
             <div class="cta">
                 <h2 class="title white left border-green">Comemore conosco você também</h2>
-                <a href="https://app.myniver.com.br/cadastro" class="button">Cadastre-se</a>
+                <a href="https://app.myniver.net/cadastro" class="button">Cadastre-se</a>
             </div>
         </div>
     </section>
