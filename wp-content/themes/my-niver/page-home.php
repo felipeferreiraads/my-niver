@@ -84,7 +84,7 @@
     <section class="clients">
         <div class="container">
             <div class="counter">
-                <h3>10.273</h3>
+                <h3><?php get_total_nivers();?></h3>
                 <p>aniversariantes<br>cadastrados</p>
             </div>
             <div class="cta">
