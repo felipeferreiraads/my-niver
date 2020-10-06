@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php 
+/*  Template name: Home */
+get_header(); ?>
 
     <section class="hero">
         <div class="container">
@@ -42,12 +44,9 @@
             <div class="carousel-partners">
                 <div class="carousel owl-carousel" id="carousel-partners">
                 <?php while(have_rows(('partners'))): the_row(); ?>
-                    <div class="card-partner">
-                        <figure>
-                            <img src="<?php the_sub_field('logo'); ?>" alt="<?php the_sub_field('name'); ?>">
-                        </figure>
-                        <h3><?php the_sub_field('name'); ?></h3>
-                    </div>
+                    <figure class="card-partner">
+                        <img src="<?php the_sub_field('logo'); ?>" alt="<?php the_sub_field('name'); ?>">
+                    </figure>
                 <?php endwhile; ?>
                 </div>
                 <button class="carousel-prev">
