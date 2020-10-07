@@ -69,18 +69,6 @@ function get_header( $name = null, $args = array() ) {
  * @return void|false Void on success, false if the template does not exist.
  */
 
-function get_total_nivers () {
-
-                                $handle = curl_init();
-                                $url = "https://app.myniver.net/countnivers";
-                                curl_setopt($handle, CURLOPT_URL, $url);
-                                curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
-                                $output = curl_exec($handle);
-                                curl_close($handle);
-                                echo number_format($output,0,'','.');
-
-}
-
 function get_footer( $name = null, $args = array() ) {
 	/**
 	 * Fires before the footer template file is loaded.
